@@ -1,11 +1,8 @@
-# Lotería Push — Notificaciones push (FCM) con un cantor de Lotería en la nube
+# Lotería
 
 
 ## Ciclo TDD — Evidencias
 
-🔴 **ROJO:** se escribe la prueba primero; falla porque el código todavía no existe.
-🟢 **VERDE:** se escribe el código mínimo para que la prueba pase.
-🔵 **REFACTOR:** se ordena el código sin romper las pruebas.
 
 ### 1. Servidor en Node
 **🔴 Rojo**
