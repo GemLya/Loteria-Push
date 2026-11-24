@@ -1,29 +1,6 @@
 # Lotería Push — Notificaciones push (FCM) con un cantor de Lotería en la nube
 
-Proyecto construido con **TDD (Rojo → Verde → Refactor)**: una Lotería mexicana donde el **cantor vive en un
-servidor Node** y cada carta cantada llega como **notificación push** (Firebase Cloud Messaging) a la app
-**Flutter** de todos los jugadores de la sala.
 
-- **Materia:** Desarrollo Móvil Integral — UTNG
-- **Profesor:** Anastacio Rodríguez García
-
-> 🔔 Regla de oro: **el push es un AVISO, el servidor es la VERDAD.** La app sobrevive a mensajes perdidos,
-> repetidos y desordenados porque siempre puede sincronizarse con el servidor.
-
----
-
-## ¿Qué hace?
-
-| Parte | Qué hace |
-|---|---|
-| 🎤 **Cantor (servidor)** | Crea salas, reparte tablas de 16 cartas, canta cartas al azar y comprueba quién gana. |
-| 📣 **Push a la sala** | Cada carta cantada se envía a un **tema** (`sala_ABCDE`) y llega a todos los jugadores. |
-| 😮 **"¡Casi!"** | Aviso personal (por **token**) a quien está a una carta de ganar. |
-| 🎉 **¡Lotería!** | El servidor revisa la tabla (filas, columnas, diagonales, esquinas, centro) y avisa a todos. |
-| 📱 **App** | Tu tabla con frijolitos, la última carta cantada y el modo cantor. |
-| 🔄 **Sincronizar** | Al abrir la app o si se perdió un push, pregunta al servidor qué cartas van. |
-| 🙋 **Permiso** | Se pide tras explicar para qué; sin permiso la app sigue funcionando. |
-| 🔐 **Seguridad** | Claves de cantor y jugador, freno de abuso, tokens muertos se borran, la cuenta de servicio nunca va en la app. |
 
 ---
 
